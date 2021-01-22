@@ -12,4 +12,5 @@ class Student(models.Model):
         Professor,
         related_name='tutoring'
     )
-
+class Subject(models.Model):
+    name = models.TextField()
