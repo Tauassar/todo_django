@@ -1,0 +1,48 @@
+{% extends 'quickstart/mainTemplate.html' %}
+    {% block content %}
+
+
+<div class="row justify-content-center">
+  <div class="col-lg-6 col-sm-10 pt-5" id="center">
+    <h1 class="text-center mb-4 font-weight-bold">ToDo list project</h1>
+
+    <div class="container px-4">
+<form class="form need-validation" id="testForm">
+  <div class="form-group">
+  <div class='row'>
+    <div class="col">
+      <input type="text" name="newItem" class="form-control" placeholder="Add new item to the list" id="newVal" autocomplete="off" required>
+      <div class="valid-feedback">Valid.</div>
+      <div class="invalid-feedback">Please fill out this field.</div>
+    </div>
+    <div class="col-xs-1 mr-2">
+      <div class="input-group-append">
+        <button type="submit" class="btn btn-primary" id="submit_button">Submit</button>
+      </div>
+    </div>
+  </div>
+  </div>
+</form>
+    </div>
+
+    <ul class="list-group mt-3 px-4 text-decoration-none mb-4" id="itemList">
+      <li class="list-group-item" id='item1'>
+        <button type="button" class="close" data-dismiss="alert">&#9842;</button>
+        <a href="#item1">first task</a>
+      </li>
+      <li class="list-group-item" id='item1'>
+        <button type="button" class="close" data-dismiss="alert">&#9842;</button>
+        <a href="#item2">second task</a>
+      </li>
+      <li class="list-group-item" id='item1'>
+        <button type="button" class="close" data-dismiss="alert">&#9842;</button>
+        <a href="#item3">third task</a>
+      </li>
+      <li class="list-group-item" id='item1'>
+        <button type="button" class="close" data-dismiss="alert">&#9842;</button>
+        <a href="#item4">fourth task</a>
+      </li>
+    </ul>
+  </div>
+</div>
+    {% endblock %}
